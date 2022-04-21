@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UpdateActivity"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/et_title_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/et_body_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body"
+        android:textStyle="normal"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:text="Update Post"/>
+
+</LinearLayout>
