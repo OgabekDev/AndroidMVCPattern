@@ -29,16 +29,13 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(this, 1)
 
-
+        apiPostList()
 
     }
 
     fun refreshAdapter(posters: ArrayList<Post>) {
         val adapter = PostAdapter(this, posters)
         recyclerView.adapter = adapter
-
-        apiPostList()
-
     }
 
     private fun apiPostList() {
